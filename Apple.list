@@ -1,4 +1,3 @@
-[filter_local]
 # AppStore走代理
 DOMAIN-SUFFIX,apps.apple.com,全球加速
 DOMAIN-SUFFIX,itunes.apple.com,全球加速
