@@ -336,9 +336,9 @@ DOMAIN-SUFFIX, log.yex.youdao.com
 
 # > 威锋
 # 广告联盟已包含
-#DOMAIN-SUFFIX, aoodoo.feng.com
-#DOMAIN-SUFFIX, push.feng.com
-#DOMAIN-SUFFIX, aoodoo.weiphone.com
+DOMAIN-SUFFIX, aoodoo.feng.com
+DOMAIN-SUFFIX, push.feng.com
+DOMAIN-SUFFIX, aoodoo.weiphone.com
 
 # > 中国电信
 DOMAIN, ad.21cn.com
