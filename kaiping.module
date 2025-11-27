@@ -6,6 +6,8 @@
 # 淘宝
 DOMAIN-SUFFIX,h-adashx.ut.taobao.com,REJECT // 淘宝后台广告
 DOMAIN,heic.alicdn.com,REJECT // 淘宝后台广告
+# 12306
+DOMAIN,ad.12306.cn,DIRECT,extended-matching
 # 美柚广告/推广域名
 DOMAIN-SUFFIX,ad.meiyou.com,REJECT
 DOMAIN-SUFFIX,promote.meiyou.com,REJECT
@@ -23,6 +25,7 @@ DOMAIN-SUFFIX,track.meiyou.com,REJECT
 ^https:\/\/axxd\.xmseeyouyima\.com\/pregetad\? reject header
 
 [Map Local]
+# 淘宝
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv data-type=text data="{}" status-code=200 header="Content-Type:application/json"
@@ -46,9 +49,11 @@ DOMAIN-SUFFIX,track.meiyou.com,REJECT
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
+# 淘宝
 移除淘宝开屏广告 = type=http-response, pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get), script-path=https://kelee.one/Resource/JavaScript/Taobao/Taobao_remove_ads.js, requires-body=true
-
 移除淘宝开屏广告 = type=http-response, pattern=^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json, script-path=https://kelee.one/Resource/JavaScript/Taobao/Taobao_remove_ads.js, requires-body=true
-
+# 12306
+移除12306开屏广告 = type=http-request, pattern=^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$, script-path=https://kelee.one/Resource/JavaScript/12306/12306_remove_splashscreen_ads.js, requires-body=true
+移除12306应用内广告 = type=http-request, pattern=^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://kelee.one/Resource/JavaScript/12306/12306_remove_ads.js
 [MITM]
-hostname= %APPEND% acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,app.10099.com.cn,x.seeyouyima.com, axxd.xmseeyouyima.com
+hostname= %APPEND% acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,app.10099.com.cn,x.seeyouyima.com, axxd.xmseeyouyima.com,ad.12306.cn, mobile.12306.cn
