@@ -1,0 +1,16 @@
+# AppStore走代理
+DOMAIN-SUFFIX,apps.apple.com,app,PROXY
+DOMAIN-SUFFIX,itunes.apple.com,app,PROXY
+DOMAIN-SUFFIX,download.itunes.apple.com,app,PROXY
+DOMAIN-SUFFIX,phobos.apple.com,app,PROXY
+DOMAIN-SUFFIX,ax.itunes.apple.com,app,PROXY
+# 其它Apple请求
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,me.com,DIRECT
+DOMAIN-SUFFIX,mac.com,DIRECT
+DOMAIN-SUFFIX,apple-dns.net,DIRECT
+DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+DOMAIN-SUFFIX,app-analytics.apple.com,DIRECT
+IP-CIDR,17.0.0.0/8,DIRECT
+IP-CIDR,143.175.0.0/16,DIRECT
