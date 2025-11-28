@@ -1,6 +1,7 @@
 #!name=Apple
 #!desc=AppStore走代理其它直连
 # AppStore走代理
+[Rule]
 DOMAIN-SUFFIX,apps.apple.com,app,PROXY
 DOMAIN-SUFFIX,itunes.apple.com,app,PROXY
 DOMAIN-SUFFIX,download.itunes.apple.com,app,PROXY
