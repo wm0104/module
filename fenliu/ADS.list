@@ -1,6 +1,6 @@
 # 淘宝
-DOMAIN-SUFFIX,h-adashx.ut.taobao.com # 淘宝后台广告
-DOMAIN,heic.alicdn.com # 淘宝后台广告
+DOMAIN-SUFFIX,h-adashx.ut.taobao.com
+DOMAIN,heic.alicdn.com
 DOMAIN-SUFFIX,apoll.m.taobao.com
 DOMAIN-SUFFIX,h-adashx.ut.taobao.com
 DOMAIN-SUFFIX,w.m.taobao.com
