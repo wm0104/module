@@ -4,11 +4,11 @@
 
 [Rule]
 # AppStore走代理
-DOMAIN-SUFFIX,apps.apple.com,全球加速
-DOMAIN-SUFFIX,itunes.apple.com,全球加速
-DOMAIN-SUFFIX,download.itunes.apple.com,全球加速
-DOMAIN-SUFFIX,phobos.apple.com,全球加速
-DOMAIN-SUFFIX,ax.itunes.apple.com,全球加速
+DOMAIN-SUFFIX,apps.apple.com,Global
+DOMAIN-SUFFIX,itunes.apple.com,Global
+DOMAIN-SUFFIX,download.itunes.apple.com,Global
+DOMAIN-SUFFIX,phobos.apple.com,Global
+DOMAIN-SUFFIX,ax.itunes.apple.com,Global
 # 其它Apple请求
 DOMAIN-SUFFIX,apple.com,DIRECT
 DOMAIN-SUFFIX,icloud.com,DIRECT
