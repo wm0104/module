@@ -14,6 +14,8 @@ DOMAIN,h-adashx.ut.taobao.com,REJECT
 DOMAIN,ut.taobao.com,REJECT
 
 [Rewrite]
+# 中国广电
+^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage reject
 # 淘宝
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) reject-dict
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv reject-dict
@@ -70,4 +72,4 @@ http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path
 
 
 [MITM]
-hostname = ad.12306.cn, mobile.12306.cn,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.coolapk.com,acs.m.goofish.com, g-acs.m.goofish.com
+hostname = app.10099.com.cn,ad.12306.cn, mobile.12306.cn,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.coolapk.com,acs.m.goofish.com, g-acs.m.goofish.com
